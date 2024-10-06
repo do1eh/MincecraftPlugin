@@ -1,0 +1,11 @@
+name: McPigotPlugin
+version: '1.0'
+main: de.do1eh.mcPigotPlugin.McPigotPlugin
+api-version: '1.21'
+commands:
+     gutpfad:
+       description: pfadfinderische Gruesse
+       usage: /gutpfad
+     halloween:
+       description: einen Kuerbis spwanen
+       usage: /halloween
