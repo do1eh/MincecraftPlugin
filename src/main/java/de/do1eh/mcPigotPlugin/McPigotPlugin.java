@@ -75,23 +75,18 @@ public final class McPigotPlugin extends JavaPlugin {
      * @param sender
      */
     private void jurte(CommandSender sender, String radius){
-
-
-        if (null==radius){
+      if (null==radius){
             radius="6";
         }
         //Jurte
         int r= Integer.parseInt(radius);
-
         kreis(sender,r,0,Material.BLACK_WOOL,true);
         kreis(sender,r,1,Material.BLACK_WOOL,true);
-
         int hoehe=2;
         for(int i=r-1;i>0;i--) {
             kreis(sender,i,hoehe,Material.BLACK_WOOL,true);
             if ((i%3==0)){hoehe++;}
         }
-
 
         Player player=(Player) sender;
         World welt=player.getWorld();
