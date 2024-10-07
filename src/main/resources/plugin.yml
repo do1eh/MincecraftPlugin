@@ -9,3 +9,6 @@ commands:
      halloween:
        description: einen Kuerbis spwanen
        usage: /halloween
+     jurte:
+       description: Hier eine Jurte aufbauen
+       usage: /jurte
