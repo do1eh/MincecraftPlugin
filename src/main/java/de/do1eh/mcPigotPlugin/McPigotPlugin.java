@@ -46,8 +46,11 @@ public final class McPigotPlugin extends JavaPlugin {
         switch (command.getLabel()) {
 
             case "gutpfad": gutPfad();
+            break;
             case "halloween": halloween(sender);
+            break;
             case "jurte" :jurte(sender,parameter1);
+            break;
 
         }
         return true;
@@ -66,7 +69,7 @@ public final class McPigotPlugin extends JavaPlugin {
         position.setX(position.getX()+2);
         World welt=player.getWorld();
         Block block=welt.getBlockAt(position);
-        block.setType(Material.BELL);
+        block.setType(Material.PUMPKIN);
     }
 
 
